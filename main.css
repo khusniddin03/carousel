@@ -1,0 +1,71 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.progress {
+  width: 100%;
+  background-color: #f1f1f1;
+  padding: 20px 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+.progress .progress__bg {
+  padding: 20px 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 0%;
+  z-index: 2;
+  overflow: hidden;
+  background: #1D3968;
+}
+
+.progress .progress__bg .progress__list {
+  padding: 0 120px;
+}
+
+.progress .progress__bg .progress__list li a {
+  color: #fff;
+}
+
+.progress .progress__navbar {
+  position: relative;
+  z-index: 1;
+}
+
+.progress .progress__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
+.progress .progress__list li a {
+  padding-right: 70px;
+  padding-left: 1rem;
+  border-left: 1px solid #c8c8c8;
+  border-right: 1px solid #c8c8c8;
+  color: #1D2023;
+  text-decoration: none;
+}
+
+section {
+  text-align: center;
+  height: 100vh;
+  padding-top: 90px;
+}
+/*# sourceMappingURL=main.css.map */
