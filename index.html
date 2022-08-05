@@ -1,76 +1,680 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
 </head>
+
 <body>
-    <div class="progress">
-        <div class="progress__bg">
-            <ul class="progress__list">
-                <li><a href="#1">Секция 1</a></li>
-                <li><a href="#2">Секция 2</a></li>
-                <li><a href="#3">Секция 3</a></li> 
-                <li><a href="#4">Секция 4</a></li>
-                <li><a href="#5">Секция 5</a></li>
-                <li><a href="#6">Секция 6</a></li>
-                <li><a href="#7">Секция 7</a></li>
-                <li><a href="#8">Секция 8</a></li>
-                <li><a href="#9">Секция 9</a></li>
-                <li><a href="#10">Секция 10</a></li>
+  <div class="wrapper">
+    <header class="header bg-light">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <a class="navbar-brand" href="#">
+            <img src="https://bootstrap-4.ru/docs/4.6/assets/brand/bootstrap-solid.svg" width="30" height="30" alt="" />
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Переключатель навигации">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Главная <span class="sr-only">(текущая)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Ссылка</a>
+              </li>
             </ul>
-        </div>
-        <div class="progress__navbar">
-            <ul class="progress__list">
-                <li><a href="#1">Секция 1</a></li>
-                <li><a href="#2">Секция 2</a></li>
-                <li><a href="#3">Секция 3</a></li> 
-                <li><a href="#4">Секция 4</a></li>
-                <li><a href="#5">Секция 5</a></li>
-                <li><a href="#6">Секция 6</a></li>
-                <li><a href="#7">Секция 7</a></li>
-                <li><a href="#8">Секция 8</a></li>
-                <li><a href="#9">Секция 9</a></li>
-                <li><a href="#10">Секция 10</a></li>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="main-banner"></div>
+
+      <div class="tube-content">
+        <!--труба-->
+        <div class="sticky">
+          <div class="progress__truba">
+            <div class="progress__bg"></div>
+            <div class="progress__navbar">
+              <ul class="progress__list">
+                <li class="section1">
+                  <a href="#section1">
+                    <span>
+                      <span>Секция 1</span>
+                    </span>
+                    <div class="link__hidden">
+                      <span>
+                        <span>Секция 1</span>
+                      </span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section2">
+                  <a href="#section2">
+                    <span>Секция 2</span>
+                    <div class="link__hidden">
+                      <span>Секция 2</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section3">
+                  <a href="#section3">
+                    <span>Секция 3</span>
+                    <div class="link__hidden">
+                      <span>Секция 3</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section4">
+                  <a href="#section4">
+                    <span>Секция 4</span>
+                    <div class="link__hidden">
+                      <span>Секция 4</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section5">
+                  <a href="#section5">
+                    <span>Секция 3 пример в 2 и более строки</span>
+                    <div class="link__hidden">
+                      <span>Секция 3 пример в 2 и более строки</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section6">
+                  <a href="#section6">
+                    <span>Секция 3 пример в 2 и более строки</span>
+                    <div class="link__hidden">
+                      <span>Секция 3 пример в 2 и более строки</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section7">
+                  <a href="#section7">
+                    <span>Секция 3 пример в 2 и более строки</span>
+                    <div class="link__hidden">
+                      <span>Секция 3 пример в 2 и более строки</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section8">
+                  <a href="#section8">
+                    <span>Секция 3 пример в 2 и более строки</span>
+                    <div class="link__hidden">
+                      <span>Секция 3 пример в 2 и более строки</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section9">
+                  <a href="#section9">
+                    <span>Секция 9</span>
+                    <div class="link__hidden">
+                      <span>Секция 9</span>
+                    </div>
+                  </a>
+                </li>
+                <li class="section10">
+                  <a href="#section10">
+                    <span>Секция 10</span>
+                    <div class="link__hidden">
+                      <span>Секция 10</span>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <ul class="nav-dots" id="js-dots">
+              <li class="nav-dot is-active">
+                <a href="#section1">Секция 1</a>
+              </li>
+              <li class="nav-dot"><a href="#section2">Секция 2</a></li>
+              <li class="nav-dot"><a href="#section3">Секция 3</a></li>
+              <li class="nav-dot"><a href="#section4">Секция 4</a></li>
+              <li class="nav-dot"><a href="#section5">Секция 5</a></li>
+              <li class="nav-dot"><a href="#section6">Секция 6</a></li>
+              <li class="nav-dot"><a href="#section7">Секция 7</a></li>
+              <li class="nav-dot"><a href="#section8">Секция 8</a></li>
+              <li class="nav-dot"><a href="#section9">Секция 9</a></li>
+              <li class="nav-dot"><a href="#section10">Секция 10</a></li>
+
+              <div class="btn__control">
+                <a class="prev"><i class="fa-solid fa-angle-left"></i></span></a>
+                <a class="next"><i class="fa-solid fa-angle-right"></i></span></a>
+              </div>
             </ul>
+          </div>
         </div>
+        <!--./труба-->
+
+        <section class="section section1" id="section1">
+          <div class="container">
+            <h1>Раздел 1</h1>
+            <div class="row">
+              <div class="col-6">
+                <h4>Lorem, ipsum.</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit corrupti quisquam adipisci nobis quibusdam incidunt
+                  minima vel, ad impedit voluptatibus culpa qui.
+                </p>
+                <p>
+                  Facere sit at eos quia vitae, cumque in, deleniti amet
+                  aliquid minima iste maxime possimus ipsam?
+                </p>
+
+                <button type="button" class="btn btn-primary mt-3">
+                  Primary
+                </button>
+              </div>
+              <div class="col-6">
+                <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" alt="" class="img" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section2" id="section2">
+          <div class="container">
+            <h1>Раздел 2</h1>
+            <div class="row">
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section3" id="section3">
+          <div class="container">
+            <h1>Раздел 3</h1>
+            <div class="row">
+              <div class="col-12">
+                <div class="card text-center">
+                  <div class="card-header">Рекомендуемые</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Особое обращение с титулом</h5>
+                    <p class="card-text">
+                      С вспомогательным текстом ниже в качестве естественного
+                      перехода к дополнительному контенту.
+                    </p>
+                    <a href="#" class="btn btn-primary">Идти куда-нибудь</a>
+                  </div>
+                  <div class="card-footer text-muted">2 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section4" id="section4">
+          <div class="container">
+            <h1>Раздел 4</h1>
+            <div class="row">
+              <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section5" id="section5">
+          <div class="container">
+            <h1>Раздел 5</h1>
+            <div class="row">
+              <div class="col-6">
+                <h4>Lorem, ipsum.</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit corrupti quisquam adipisci nobis quibusdam incidunt
+                  minima vel, ad impedit voluptatibus culpa qui.
+                </p>
+                <p>
+                  Facere sit at eos quia vitae, cumque in, deleniti amet
+                  aliquid minima iste maxime possimus ipsam?
+                </p>
+
+                <button type="button" class="btn btn-primary mt-3">
+                  Primary
+                </button>
+              </div>
+              <div class="col-6">
+                <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" alt="" class="img" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section6" id="section6">
+          <div class="container">
+            <h1>Раздел 6</h1>
+            <div class="row">
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section7" id="section7">
+          <div class="container">
+            <h1>Раздел 7</h1>
+            <div class="row">
+              <div class="col-12">
+                <div class="card text-center">
+                  <div class="card-header">Рекомендуемые</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Особое обращение с титулом</h5>
+                    <p class="card-text">
+                      С вспомогательным текстом ниже в качестве естественного
+                      перехода к дополнительному контенту.
+                    </p>
+                    <a href="#" class="btn btn-primary">Идти куда-нибудь</a>
+                  </div>
+                  <div class="card-footer text-muted">2 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section8" id="section8">
+          <div class="container">
+            <h1>Раздел 8</h1>
+            <div class="row">
+              <div class="col-12">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                  <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                  </ol>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                    <div class="carousel-item">
+                      <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" class="d-block w-100"
+                        alt="..." />
+                    </div>
+                  </div>
+                  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Предыдущий</span>
+                  </a>
+                  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Следующий</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section9" id="section9">
+          <div class="container">
+            <h1>Раздел 9</h1>
+            <div class="row">
+              <div class="col-6">
+                <h4>Lorem, ipsum.</h4>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Odit corrupti quisquam adipisci nobis quibusdam incidunt
+                  minima vel, ad impedit voluptatibus culpa qui.
+                </p>
+                <p>
+                  Facere sit at eos quia vitae, cumque in, deleniti amet
+                  aliquid minima iste maxime possimus ipsam?
+                </p>
+
+                <button type="button" class="btn btn-primary mt-3">
+                  Primary
+                </button>
+              </div>
+              <div class="col-6">
+                <img src="https://via.placeholder.com/1920x1080/7ce1e4/ffffff?text=заглушка" alt="" class="img" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section section10" id="section10">
+          <div class="container">
+            <h1>Раздел 10</h1>
+            <div class="row">
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-4 mt-4">
+                <div class="card">
+                  <img src="https://via.placeholder.com/1920x1080/eb8a56/ffffff?text=заглушка" alt="" class="img" />
+
+                  <div class="card-body">
+                    <p class="card-text">
+                      Несколько быстрых примеров текста для построения на
+                      основе заголовка карточек и составляющих основную часть
+                      содержимого карточки.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="all-sections">
+        <div class="container">
+          <div class="text-center">
+            <h4>Это блок чтобы можно было пролистать секции полностью</h4>
+          </div>
+        </div>
+      </div>
     </div>
 
-    <main>
-        <section id="1">
-            <h1>section 1</h1>
-        </section>
-        <section id="2">
-            <h1>section 2</h1>
-        </section>
-        <section id="3">
-            <h1>section 3</h1>
-        </section>
-        <section id="4">
-            <h1>section 4</h1>
-        </section>
-        <section id="5">
-            <h1>section 5</h1>
-        </section>
-        <section id="6">
-            <h1>section 6</h1>
-        </section>
-        <section id="7">
-            <h1>section 7</h1>
-        </section>
-        <section id="8">
-            <h1>section 8</h1>
-        </section>
-        <section id="9">
-            <h1>section 9</h1>
-        </section>
-        <section id="10">
-            <h1>section 10</h1>
-        </section>
-    </main>
-    <script src="script.js"></script>
+    <footer class="footer pt-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-md">
+            <img class="mb-2" src="https://bootstrap-4.ru/docs/4.6/assets/brand/bootstrap-solid.svg" alt="" width="24"
+              height="24" />
+            <small class="d-block mb-3 text-muted">© 2017-2021</small>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>

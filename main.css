@@ -1,71 +1,287 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html {
+html,
+body {
+  height: 100%;
   scroll-behavior: smooth;
 }
 
-.progress {
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+}
+
+.content {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.main-banner {
   width: 100%;
-  background-color: #f1f1f1;
-  padding: 20px 120px;
+  height: 400px;
+  background: #fde;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.section {
+  padding: 64px 0;
+}
+
+.all-sections {
+  height: var(--app-height);
+  background-color: #eeeeee;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sticky {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 99;
+  z-index: 100;
+  width: 100%;
 }
 
-.progress .progress__bg {
-  padding: 20px 0;
+.tube {
+  width: 100%;
+  padding: 16px 0;
+  background: #def;
+}
+
+.progress__truba {
+  background-color: #f1f1f1;
+  width: 100%;
+  padding: 0 120px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.progress__truba .progress__bg {
   position: absolute;
   left: 0;
   top: 0;
+  width: 120px;
   height: 100%;
-  width: 0%;
-  z-index: 2;
-  overflow: hidden;
-  background: #1D3968;
+  background-color: #1D3968;
 }
 
-.progress .progress__bg .progress__list {
-  padding: 0 120px;
+.progress__truba .nav-dots {
+  display: none;
 }
 
-.progress .progress__bg .progress__list li a {
-  color: #fff;
+.progress__truba .progress__navbar {
+  height: 100%;
 }
 
-.progress .progress__navbar {
+.progress__truba .progress__navbar .progress__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-flow: nowrap;
+      flex-flow: nowrap;
+  padding: 0;
+  margin: 0;
+  height: 100% !important;
+}
+
+.progress__truba .progress__navbar .progress__list li {
+  display: block;
+}
+
+.progress__truba .progress__navbar .progress__list li a {
+  display: block;
+  height: 100%;
+  width: 100%;
   position: relative;
-  z-index: 1;
+  padding: 10px 0;
+  text-decoration: none;
 }
 
-.progress .progress__list {
+.progress__truba .progress__navbar .progress__list li a > span {
+  height: 100%;
+  padding: 0 20px 0 20px;
+  border-left: 1px solid #C8C8C8;
+  color: #000;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  list-style: none;
 }
 
-.progress .progress__list li a {
-  padding-right: 70px;
-  padding-left: 1rem;
-  border-left: 1px solid #c8c8c8;
-  border-right: 1px solid #c8c8c8;
-  color: #1D2023;
+.progress__truba .progress__navbar .progress__list li:last-child a > span {
+  border-right: 1px solid #C8C8C8;
+}
+
+.progress__truba .progress__navbar .progress__list li.blue .link__hidden {
+  width: 100%;
+}
+
+.progress__truba .progress__navbar .progress__list .link__hidden {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #1D3968;
+  -webkit-transition: all .01s;
+  transition: all .01s;
+  width: 0;
+  overflow: hidden;
+  display: block;
+  height: 100%;
+  padding: 10px 0;
   text-decoration: none;
 }
 
-section {
+.progress__truba .progress__navbar .progress__list .link__hidden > span {
+  display: block;
+  height: 100%;
+  padding: 0 20px 0 20px;
+  border-left: 1px solid #C8C8C8;
+  color: #fff;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.progress__truba .progress__navbar .progress__list li:last-child .link__hidden a > span {
+  border-right: 1px solid #C8C8C8;
+}
+
+.progress__truba .mob_control_btn {
+  display: none;
+}
+
+.nav-dots {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 60px;
+  padding: 20px 0;
+  background-color: #1D3968;
+  width: 100%;
+  display: none;
+  z-index: 99;
+}
+
+.nav-dots .btn__control {
+  position: absolute;
+  top: 0%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 20px;
+  cursor: default;
+}
+
+.nav-dots .btn__control a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-dot {
+  height: 100%;
   text-align: center;
-  height: 100vh;
-  padding-top: 90px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  visibility: hidden;
+}
+
+.nav-dot a {
+  color: #fff;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-dot:not(:last-of-type) {
+  margin-bottom: 20px;
+}
+
+.nav-dot:hover, .nav-dot.is-active {
+  color: #fff;
+  visibility: visible;
+}
+
+@media (max-width: 1024px) {
+  .nav-dots {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+  .progress__navbar {
+    display: none;
+  }
 }
 /*# sourceMappingURL=main.css.map */
