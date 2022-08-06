@@ -106,14 +106,11 @@ if (window.innerWidth < 1025) {
       const dots = Array.from(this.navigation.children);
 
       this.sections.forEach((section, index) => {
-        const half_window = window.innerHeight / 2;
-        const section_top = section.offsetTop;
-        if (
-          scroll_position > section_top - half_window &&
-          scroll_position < section_top + half_window
-        ) {
+        const sectionTop = section.offsetTop;
+
+        if (pageYOffset >= sectionTop - 60) {
           this.removeDotStyles();
-          dots[index].classList.add("is-active");
+          dots[index].classList.add('is-active');
         }
       });
     }
@@ -153,7 +150,7 @@ if (window.innerWidth < 1025) {
     if (count < navDots.length - 1) {
       next.href = navDots[count + 1].querySelector("a").getAttribute("href");
     }
-    if (!navDots[count + 1]) {     
+    if (!navDots[count + 1]) {
       next.classList.add("active");
     } else {
       next.classList.remove("active");
@@ -165,7 +162,7 @@ if (window.innerWidth < 1025) {
     }
   }
   mainFunctions();
-  
+
   window.addEventListener("scroll", () => {
     mainFunctions()
   });
