@@ -315,4 +315,10 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 400px) {
+  .nav-dots {
+    min-height: 80px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
