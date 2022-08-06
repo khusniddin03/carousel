@@ -248,13 +248,19 @@ body {
   padding: 0 20px;
   position: relative;
   z-index: 5;
-  opacity: 1;
+}
+
+.nav-dots .btn__control1 a > i {
+  display: block;
 }
 
 .nav-dots .btn__control1 a.prev.active, .nav-dots .btn__control1 a.next.active {
   pointer-events: none;
   cursor: default;
-  opacity: 0;
+}
+
+.nav-dots .btn__control1 a.prev.active > i, .nav-dots .btn__control1 a.next.active > i {
+  display: none;
 }
 
 .nav-dots .btn__control1 .control__hidden {

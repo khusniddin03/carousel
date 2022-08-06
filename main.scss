@@ -202,13 +202,16 @@ body {
       padding: 0 20px;
       position: relative;
       z-index: 5;
-      opacity: 1;
-
+      & > i {
+        display: block;
+      }
       &.prev.active,
       &.next.active {
         pointer-events: none;
         cursor: default;
-        opacity: 0;
+        & > i {
+          display: none;
+        }
       }
     }
 
