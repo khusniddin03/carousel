@@ -1,3 +1,4 @@
+"use strict";
 /*
 ФИКС БАГА 100VH ДЛЯ HEIGHT
 использование: для нужного элемента прописать height: var(--app-height);
