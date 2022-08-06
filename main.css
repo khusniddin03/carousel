@@ -248,12 +248,17 @@ body {
   padding: 0 20px;
   position: relative;
   z-index: 5;
+  opacity: 1;
+  -khtml-opacity: 1;
+  -moz-opacity: 1;
 }
 
 .nav-dots .btn__control1 a.prev.active, .nav-dots .btn__control1 a.next.active {
   pointer-events: none;
   cursor: default;
   opacity: 0;
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
 }
 
 .nav-dots .btn__control1 .control__hidden {
