@@ -141,6 +141,7 @@ if (window.innerWidth < 1025) {
   let count = 0;
 
   function mainFunctions() {
+    console.log("addHref");
     for (let i = 0; i < navDots.length; i++) {
       if (navDots[i].classList.contains("is-active")) count = i;
     }
@@ -170,6 +171,7 @@ if (window.innerWidth < 1025) {
     if (count < navDots.length - 1) {
       count += 1;
       next.href = navDots[count].querySelector("a").getAttribute("href");
+      console.log("next");
     }
   });
 
@@ -177,6 +179,7 @@ if (window.innerWidth < 1025) {
     if (count > 0) {
       count -= 1;
       prev.href = navDots[count].querySelector("a").getAttribute("href");
+      console.log("prev");
     }
   });
 }
