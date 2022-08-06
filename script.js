@@ -141,7 +141,7 @@ if (window.innerWidth < 1025) {
   let count = 0;
 
   function mainFunctions() {
-    console.log("addHref");
+    console.log(navDots);
     for (let i = 0; i < navDots.length; i++) {
       if (navDots[i].classList.contains("is-active")) count = i;
     }
