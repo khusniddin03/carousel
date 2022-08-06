@@ -252,6 +252,11 @@ body {
 
 .nav-dots .btn__control1 a > i {
   display: block;
+  width: auto;
+  height: auto;
+  font-size: auto;
+  overflow: inherit;
+  visibility: visible;
 }
 
 .nav-dots .btn__control1 a.prev.active, .nav-dots .btn__control1 a.next.active {
@@ -261,6 +266,11 @@ body {
 
 .nav-dots .btn__control1 a.prev.active > i, .nav-dots .btn__control1 a.next.active > i {
   display: none;
+  width: 0;
+  height: 0;
+  font-size: 0;
+  overflow: hidden;
+  visibility: hidden;
 }
 
 .nav-dots .btn__control1 .control__hidden {

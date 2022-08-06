@@ -202,15 +202,28 @@ body {
       padding: 0 20px;
       position: relative;
       z-index: 5;
-      & > i {
+
+      &>i {
         display: block;
+        width: auto;
+        height: auto;
+        font-size: auto;
+        overflow:inherit;
+        visibility: visible;
       }
+
       &.prev.active,
       &.next.active {
         pointer-events: none;
         cursor: default;
-        & > i {
+
+        &>i {
           display: none;
+          width: 0;
+          height: 0;
+          font-size: 0;
+          overflow: hidden;
+          visibility: hidden;
         }
       }
     }
